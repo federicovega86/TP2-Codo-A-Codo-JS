@@ -21,7 +21,7 @@ nav{
 
 
  .banner{
-    background-image: url(/img/ba1.jpg);
+    background-image: url(../img/ba1.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
