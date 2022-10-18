@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--made for -->
+
+  <title>Conf Bs As</title>
+  <!-- bootstrap local -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- bootstrap cdn -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <!--img src="img/codoacodo.png" width='100' alt="logo"-->
+          Conf Bs As
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link" style="color:white;">La
+                Conferencia</a> </li>
+            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">Los oradores</a> </li>
+            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">El lugar y la fecha</a> </li>
+            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">Conviértete en orador</a> </li>
+            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link" style="color: green">Comprar
+                tickets</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <div class="container pt-3 ">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
+          <div class="card border-primary rounded-0  text-center"  >
+            <div class="card-title mt-3">
+              <h5 class=" fs-3">Estudiante</h5>
+            </div>
+            <div class="card-body ">
+                <p class=" fs-5">Tiene un descuento</p>
+                <p class=" fw-bold">80%</p>
+                <span class="small text-secondary">* presentar documentacion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
+          <div class="card border-success rounded-0  text-center "  >
+            <div class="card-title  mt-3">
+              <h5 class=" fs-3 ">Trainee</h5>
+            </div>
+            <div class="card-body">
+                <p class=" fs-5">Tiene un descuento</p>
+                <p class=" fw-bold">50%</p>
+                <span class="small text-secondary">* presentar documentacion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
+          <div class="card border-warning rounded-0  text-center"  >
+            <div class="card-title  mt-3">
+              <h5 class=" fs-3 ">Junior</h5>
+            </div>
+            <div class="card-body">
+                <p class=" fs-5">Tiene un descuento</p>
+                <p class=" fw-bold">15%</p>
+                <span class="small text-secondary">* presentar documentacion</span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!-- FORM IGNITE -->
+    <div class="container">
+      <div class="row mt-1">
+        <div class="titulo-oradores text-center ">
+          <span>VENTA</span>
+          <h2>VALOR DEL TICKET $200</h2>
+        </div>
+      </div>
+    </div>
+    <div class="form-orador">
+      <form class="form" action="">
+        
+        <div class="container mb-3">
+
+          <div class="row justify-content-center form-group">
+            <div class="mb-3 col-4">
+              <input type="text" id="" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="mb-3 col-4">
+              <input type="text" id="" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+
+          <div class="row justify-content-center form-group">
+            <div class="mb-3 col-8">
+              <input type="email" id="" class="form-control" placeholder="Correo">
+            </div>
+          </div>
+
+          <div class="row justify-content-center form-group">
+            <div class="mb-3 col-4">
+              <label for="">Cantidad</label>
+              <input type="number" min="0" max="100" id="cantidad" class="form-control" placeholder="Cantidad">
+            </div>
+            <div class="mb-3 col-4">
+              <label for="categoria">Categoria</label>
+              <select id="categoria" class="form-select">
+                <option selected value="Estudiante">Estudiante</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row justify-content-center form-group">
+            <div class="alert alert-primary mensaje-user mb-3 col-8">
+              <div class="d-inline">Total a pagar: $</div>
+              <div class="d-inline" id="total"></div>
+            </div>
+           </div>
+
+          <div class="row justify-content-center form-group ">
+            <div class="col-4 mt-2 ">
+              <button type="button" class="btn btn-form btn-success btnBorrar">Borrar</button>
+            </div>
+            <div class="col-4 mt-2 ">
+              <button type="button" class="btn btn-form btn-success btnResumen">Resumen</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+      <!-- FIN FORM IGNITE -->
+    </div>
+  </main>
+  <!-- FIN MAIN -->
+  <!-- FOOTER -->
+  <footer class="container-fluid ">
+    <div class="container">
+      <div class="row">
+        <div class="col  my-auto"><a href="#">Preguntas frecuentes</a></div>
+        <div class="col  my-auto"><a href="#">Contáctanos</a></div>
+        <div class="col  my-auto"><a href="#">Prensa</a></div>
+        <div class="col  my-auto"><a href="#">Conferencias</a></div>
+        <div class="col  my-auto"><a href="#">Términos y condiciones</a></div>
+        <div class="col  my-auto"><a href="#">Privacidad</a></div>
+        <div class="col  my-auto"><a href="#">Estudiantes</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+  <!-- js bootstrap local -->
+  <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- js local -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
