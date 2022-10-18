@@ -13,14 +13,15 @@
   <!-- bootstrap cdn -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">
-          <!--img src="img/codoacodo.png" width='100' alt="logo"-->
+          <img src="img/codoacodo.png" width='100' alt="logo">
           Conf Bs As
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,12 +30,12 @@
         </button>
         <div class="collapse navbar-collapse flex-row-reverse " id="navbarNav">
           <ul class="navbar-nav">
-            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link" style="color:white;">La
+            <li class="navbar-item"><a href="#inicio" aria-current="page" class="nav-link" style="color:white;">La
                 Conferencia</a> </li>
             <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">Los oradores</a> </li>
             <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">El lugar y la fecha</a> </li>
             <li class="navbar-item"><a href="#" aria-current="page" class="nav-link">Conviértete en orador</a> </li>
-            <li class="navbar-item"><a href="#" aria-current="page" class="nav-link" style="color: green">Comprar
+            <li class="navbar-item"><a href="comprarTickets.html" aria-current="page" class="nav-link" style="color: green">Comprar
                 tickets</a> </li>
           </ul>
         </div>
@@ -42,64 +43,123 @@
     </nav>
   </header>
   <!-- MAIN -->
-  <main>
-    <div class="container pt-3 ">
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
-          <div class="card border-primary rounded-0  text-center"  >
-            <div class="card-title mt-3">
-              <h5 class=" fs-3">Estudiante</h5>
-            </div>
-            <div class="card-body ">
-                <p class=" fs-5">Tiene un descuento</p>
-                <p class=" fw-bold">80%</p>
-                <span class="small text-secondary">* presentar documentacion</span>
-            </div>
+  <main">
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner" id="inicio">
+      <div class="banner-content container-fluid">
+        <div class="row banner-text">
+          <div class="col-6"></div>
+          <div class="col-6">
+            <h2 class="text-white">Conf Bs As</h2>
+            <p class="text-white">Bs As llega por primera vez Argentina. Un evento para compartir
+              con nuestra comunidad el conocimiento y la experiencia de los expertos que
+              están creando el futuro de Internet. Ven a conocer a miembros del
+              evento, a otros estudiantes de Codo a Codo y los oradores de primer
+              nivel que tenemos para ti. Te esperamos!</p>
+            <a href="comprarTickets.html" class="btn btn-success">Comprar tickets</a>
+            <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- FIN BANNER PRINCIPAL -->
+    <!-- ORADORES -->
+    <section>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="titulo-oradores text-center ">
+            <span>CONOCE A LOS</span>
+            <h2>ORADORES</h2>
+          </div>
+        </div>
+      </div>
 
-        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
-          <div class="card border-success rounded-0  text-center "  >
-            <div class="card-title  mt-3">
-              <h5 class=" fs-3 ">Trainee</h5>
+      <div class="container oradores mb-md-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-4 col-md-4">
+            <div class="card">
+              <img src="/img/steve.jpg" alt="steve" class="card-img-top">
+              <div class="card-body ">
+                <div class="card-title">
+                  <span href="#" class="badge btn btn-warning text-dark">Javascript</span>
+                  <span href="#" class="badge btn btn-primary">React</span>
+                  <h5 class="card-title">Steve Jobs</h5>
+                </div>
+                <p class="card-text">Steve Jobs fue un empresario, inventor y magnate estadounidense. Fue el cofundador,
+                  presidente ejecutivo y director ejecutivo de Apple Inc.</p>
+              </div>
             </div>
-            <div class="card-body">
-                <p class=" fs-5">Tiene un descuento</p>
-                <p class=" fw-bold">50%</p>
-                <span class="small text-secondary">* presentar documentacion</span>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-md-4">
+            <div class="card">
+              <img src="/img/bill.jpg" alt="steve" class="card-img-top">
+              <div class="card-body">
+                <div class="card-title">
+                  <span href="#" class="badge btn btn-warning text-dark">Javascript</span>
+                  <span href="#" class="badge btn btn-primary">React</span>
+                  <h5 class="card-title">Bill Gates</h5>
+                </div>
+                <p class="card-text">William Henry Gates III, conocido como Bill Gates, es un empresario, filántropo y
+                  programador informático estadounidense.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-md-4">
+            <div class="card">
+              <img src="/img/ada.jpeg" alt="steve" class="card-img-top">
+              <div class="card-body">
+                <div class="card-title">
+                  <span href="#" class="badge btn btn-secondary ">Negocios</span>
+                  <span href="#" class="badge btn btn-danger">Startups</span>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                </div>
+                <p class="card-text">Ada Lovelace, con el nombre completo Augusta Ada Byron, fue una matemática y
+                  escritora inglesa, considerada la primera programadora de la historia.</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-sm-4 col-md-4 p-1 g-1">
-          <div class="card border-warning rounded-0  text-center"  >
-            <div class="card-title  mt-3">
-              <h5 class=" fs-3 ">Junior</h5>
-            </div>
-            <div class="card-body">
-                <p class=" fs-5">Tiene un descuento</p>
-                <p class=" fw-bold">15%</p>
-                <span class="small text-secondary">* presentar documentacion</span>
+      </div>
+    </section>
+    <!-- FIN ORADORES -->
+    <!-- LUGAR Y FECHA -->
+    <div class="div mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 border border-white p-0" >
+            <img src="/img/honolulu.jpg" alt="bsas" class="img-fluid honolulu">
+          </div>
+          <div class="col-lg-6 col-md-6 border border-white" style="background-color: #333a40;">
+            <div class="text-white p-3">
+              <h3>Bs As - Octubre</h3>
+              <p style="font-size:12px;">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en
+                los Estados Unidos.
+                Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                Honolulu se refiere al área
+                urbana en la costa sureste de la istala de Oahu, la ciudad y el condado de Honolulu han formado una
+                ciudad- condado unificada
+                una ciudad consolidada que cubre toda la ciudad(aproximadamente 600km2 de superficie).
+              </p>
+              <a href="#" class="btn btn-outline-light">Conocé más</a>
             </div>
           </div>
         </div>
-       
       </div>
     </div>
+    <!-- FIN LUGAR Y FECHA -->
     <!-- FORM IGNITE -->
     <div class="container">
-      <div class="row mt-1">
+      <div class="row mt-3">
         <div class="titulo-oradores text-center ">
-          <span>VENTA</span>
-          <h2>VALOR DEL TICKET $200</h2>
+          <span>CONVIÉRTETE EN UN</span>
+          <h2>ORADOR</h2>
+          <p>Anótate como orador para dar una <a href="#">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
         </div>
       </div>
     </div>
     <div class="form-orador">
-      <form class="form" action="">
-        
+      <form action="">
         <div class="container mb-3">
-
           <div class="row justify-content-center form-group">
             <div class="mb-3 col-4">
               <input type="text" id="" class="form-control" placeholder="Nombre">
@@ -108,71 +168,44 @@
               <input type="text" id="" class="form-control" placeholder="Apellido">
             </div>
           </div>
-
           <div class="row justify-content-center form-group">
-            <div class="mb-3 col-8">
-              <input type="email" id="" class="form-control" placeholder="Correo">
+            <div class="mb-8 col-8">
+              <textarea class="form-control" name="" id="" cols="30" rows="4"
+                placeholder="Sobre qué quieres hablar?"></textarea>
+            </div>
+            <div class="col-8 fs-6"><span class="span-incluir">Recuerda incluir un título para tu charla</span></div
+              </div>
+
+            <div class="row justify-content-center form-group ">
+              <div class="col-8 mt-2 ">
+                <button type="submit" class="btn btn-form btn-success">Enviar</button>
+              </div>
             </div>
           </div>
-
-          <div class="row justify-content-center form-group">
-            <div class="mb-3 col-4">
-              <label for="">Cantidad</label>
-              <input type="number" min="0" max="100" id="cantidad" class="form-control" placeholder="Cantidad">
-            </div>
-            <div class="mb-3 col-4">
-              <label for="categoria">Categoria</label>
-              <select id="categoria" class="form-select">
-                <option selected value="Estudiante">Estudiante</option>
-                <option value="Trainee">Trainee</option>
-                <option value="Junior">Junior</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row justify-content-center form-group">
-            <div class="alert alert-primary mensaje-user mb-3 col-8">
-              <div class="d-inline">Total a pagar: $</div>
-              <div class="d-inline" id="total"></div>
-            </div>
-           </div>
-
-          <div class="row justify-content-center form-group ">
-            <div class="col-4 mt-2 ">
-              <button type="button" class="btn btn-form btn-success btnBorrar">Borrar</button>
-            </div>
-            <div class="col-4 mt-2 ">
-              <button type="button" class="btn btn-form btn-success btnResumen">Resumen</button>
-            </div>
-          </div>
-        </div>
-
       </form>
       <!-- FIN FORM IGNITE -->
     </div>
-  </main>
-  <!-- FIN MAIN -->
-  <!-- FOOTER -->
-  <footer class="container-fluid ">
-    <div class="container">
-      <div class="row">
-        <div class="col  my-auto"><a href="#">Preguntas frecuentes</a></div>
-        <div class="col  my-auto"><a href="#">Contáctanos</a></div>
-        <div class="col  my-auto"><a href="#">Prensa</a></div>
-        <div class="col  my-auto"><a href="#">Conferencias</a></div>
-        <div class="col  my-auto"><a href="#">Términos y condiciones</a></div>
-        <div class="col  my-auto"><a href="#">Privacidad</a></div>
-        <div class="col  my-auto"><a href="#">Estudiantes</a></div>
+    </main>
+    <!-- FIN MAIN -->
+    <!-- FOOTER -->
+    <footer class="container-fluid " style="">
+      <div class="container">
+        <div class="row">
+          <div class="col  my-auto"><a href="#">Preguntas frecuentes</a></div>
+          <div class="col  my-auto"><a href="#">Contáctanos</a></div>
+          <div class="col  my-auto"><a href="#">Prensa</a></div>
+          <div class="col  my-auto"><a href="#">Conferencias</a></div>
+          <div class="col  my-auto"><a href="#">Términos y condiciones</a></div>
+          <div class="col  my-auto"><a href="#">Privacidad</a></div>
+          <div class="col  my-auto"><a href="#">Estudiantes</a></div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- FIN FOOTER -->
-  <!-- js bootstrap local -->
-  <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-  <script src="bootstrap/js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <!-- js local -->
-  <script src="js/app.js"></script>
+    </footer>
+    <!-- FIN FOOTER -->
+    <!-- js bootstrap local -->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
