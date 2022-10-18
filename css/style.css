@@ -2,29 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --bg-nav-color: #333a40;
-    --btn-forn-color: #96c93e;
-    --bg-footer-from: #1d3744;
-    --bg-footer-to: #1e4f6d;
 }
-
 
 nav{
-    background-color: var(--bg-nav-color);
+    background-color: hwb(228 24% 74%)
 }
- 
+
+.banner{
+    background-image: url(../img/ba1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes change-banckground {
+    0%{
+        background-image: url(../img/ba1.jpg);
+    }
+    50%{
+        background-image: url(../img/ba3.jpg);
+    }
+}
+
+.banner .banner-content{
+    /* padding: 45vh 25vh 8vh; */
+    background: rgba(0,0,0,0.4);
+}
+
+.banner .banner-content .banner-text{
+    align-items: flex-end;
+}
+
+.banner .banner-content .banner-text a{
+    align-items: flex-end;
+    float: right;
+    margin: 4px;
+}
+
+.banner .banner-content .banner-text h2{
+    color: #fff;
+    float: right;
+}
+.banner .banner-content .banner-text p{
+    color: #fff;
+    float: right;
+    text-align: end;
+} 
+
+.titulo-oradores p a{
+    text-decoration: underline dotted;
+    color: #000;
+}
+
+
+
 .btn-form{
-    background-color: var(--btn-forn-color);
+    background-color: rgb(158,218,80);
     border: 0px;
     width: -webkit-fill-available;
 }
 
 
 footer{
-  background-image: linear-gradient(90deg, var(--bg-footer-from) 0%, var(--bg-footer-to) 100%);
-  padding: 20px;
-  color: #fff;
-  text-align: center;    
+    background-color: rgb(61, 62, 66);
+    padding: 20px;
+    color: #fff;
+    text-align: center;    
 }
 
 footer a{
@@ -37,4 +81,3 @@ footer a:hover{
     color: rgb(134, 134, 134);
     text-decoration: none;
 }
-
